@@ -13,6 +13,8 @@ public class cubeSpawner : MonoBehaviour
 
     public GameScoreManager gameScoreManager;
 
+    public bool gameActive = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,9 @@ public class cubeSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        spawnWithTimeIntervalIfNecessary();
+        if (gameActive) {
+            spawnWithTimeIntervalIfNecessary();
+        }
     }
 
     // this is a great place for using a delegate, break up this code and make it more extensible
