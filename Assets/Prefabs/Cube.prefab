@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 223974227}
   - component: {fileID: 6107432222880822469}
   - component: {fileID: 3117097896669279207}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,8 +107,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc0458695879145a18f1142d7c633a8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHandMat: {fileID: 2100000, guid: 73208616367c1499da4f5c515de190dd, type: 2}
-  rightHandMat: {fileID: 2100000, guid: bae496f0ececd429aa8752061de2bbd4, type: 2}
+  leftHandMat: {fileID: 2100000, guid: 27a6136d64696da4eba1b89b3df8d3df, type: 2}
+  rightHandMat: {fileID: 2100000, guid: a50237e3265fe9149a16e889fd8d8b4c, type: 2}
   isLeftCube: 0
   cubeSpeed: 1
   destroyAt: 5

@@ -46,30 +46,30 @@ public class cubeInteraction : MonoBehaviour
     }
 
     public void handCollisionEnter() {
-        GetComponent<Collider>().enabled = false;
-        Destroy(gameObject);
-        cubeHit();
+        // GetComponent<Collider>().enabled = false;
+        // Destroy(gameObject);
+        // cubeHit();
     }
 
  
     // Trigger enter.
     // Notice that this gameobject must have a trigger collider
-    // private void OnTriggerEnter(Collider collider)
-    // {
-    //     //get hand associated with trigger
-    //     int handIdx = GetIndexFingerHandId(collider);
-    //     int targetIndex = isLeftCube ? 0 : 1;
+    private void OnTriggerEnter(Collider collider)
+    {
+        //get hand associated with trigger
+        // int handIdx = GetIndexFingerHandId(collider);
+        // int targetIndex = isLeftCube ? 0 : 1;
  
-    //     //if there is an associated hand, it means that an index of one of two hands is entering the cube
-    //     //change the color of the cube accordingly (blue for left hand, green for right one)
-    //     if (handIdx == targetIndex)
-    //     {
-    //         // disable collider so it wont be called by multiple finger bones
-    //         GetComponent<Collider>().enabled = false;
-    //         Destroy(gameObject);
-    //         cubeHit();
-    //     }
-    // }
+        // //if there is an associated hand, it means that an index of one of two hands is entering the cube
+        // //change the color of the cube accordingly (blue for left hand, green for right one)
+        // if (handIdx == targetIndex)
+        // {
+            // disable collider so it wont be called by multiple finger bones
+        GetComponent<Collider>().enabled = false;
+        Destroy(gameObject);
+        cubeHit();
+        //}
+    }
  
     // Gets the hand id associated with the index finger of the collider passed as parameter, if any
     // returns 0 if the collider represents the finger tip of left hand, 1 if it is the one of right hand, -1 if it is not an index fingertip
