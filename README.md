@@ -13,5 +13,5 @@ Future Roadmap:
 
 
 
-Current State Demo:
+Current State Demo:  
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/6922982/85817312-81a3fb00-b722-11ea-8667-42c1505d04cf.gif)
