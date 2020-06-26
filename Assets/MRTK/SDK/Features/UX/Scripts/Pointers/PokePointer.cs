@@ -199,6 +199,8 @@ namespace Microsoft.MixedReality.Toolkit.Input
 
         private bool FindClosestTouchableForLayerMask(LayerMask layerMask, out BaseNearInteractionTouchable closest, out float closestDistance, out Vector3 closestNormal)
         {
+            Debug.Log("Printing layer masks in list");
+            Debug.Log(string.Format("Layer: {0}", layerMask.value));
             using (FindClosestTouchableForLayerMaskPerfMarker.Auto())
             {
                 closest = null;
@@ -236,6 +238,8 @@ namespace Microsoft.MixedReality.Toolkit.Input
                 // so we have to use a static instances list to test all NearInteractionTouchableUnityUI
                 for (int i = 0; i < NearInteractionTouchableUnityUI.Instances.Count; i++)
                 {
+                    Debug.Log("Printing layer masks in list");
+                    Debug.Log(string.Format("Layer 2: {0}", layerMask.value));
                     NearInteractionTouchableUnityUI touchable = NearInteractionTouchableUnityUI.Instances[i];
                     if (touchable.gameObject.IsInLayerMask(layerMask))
                     {

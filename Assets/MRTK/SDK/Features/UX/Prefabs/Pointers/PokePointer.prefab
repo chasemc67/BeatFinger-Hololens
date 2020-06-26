@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4068518131102250}
   - component: {fileID: 120444991250561320}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ LineRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1372885406175498}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -137,7 +137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4338333115073164}
   - component: {fileID: 114559408797139306}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PokePointer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ MonoBehaviour:
   ignoreCollidersNotInFOV: 1
   pokeLayerMasks:
   - serializedVersion: 2
-    m_Bits: 4294967291
+    m_Bits: 1025
   triggerInteraction: 0
 --- !u!1 &1733798232924774
 GameObject:
@@ -215,13 +215,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4266262610514730}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4266262610514730
 Transform:
   m_ObjectHideFlags: 0

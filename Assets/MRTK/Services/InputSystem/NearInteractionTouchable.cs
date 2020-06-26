@@ -199,7 +199,7 @@ namespace Microsoft.MixedReality.Toolkit.Input
 
                 SetBounds(adjustedSize);
 
-                // Set x and y center to match the newCollider but change the position of the
+        // Set x and y center to match the newCollider but change the position of the
                 // z axis so the plane is always in front of the object
                 SetLocalCenter(newCollider.center + Vector3.Scale(newCollider.size / 2.0f, LocalForward));
 
